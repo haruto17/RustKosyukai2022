@@ -1,2 +1,1 @@
-# CBT-Calculator  
-## CBT用の計算機です
+# Rust講習会2022
