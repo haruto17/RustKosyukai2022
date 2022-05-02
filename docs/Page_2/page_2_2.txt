@@ -1,0 +1,2 @@
+インストールしmain.rsを開くと、右下に「Some Rust Components not installed. install?」
+とポップアップが表示されるので「Yes」を選択してください。
