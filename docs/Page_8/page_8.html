@@ -9,6 +9,44 @@
     <body>
         <h1 align="center">Rust講習会2022</h1>
         <h2 align="center">条件分岐</h2>
-        <object data="page_8.txt" type="text/plain" width="100%" height="100%"></object>
+        <h2 align="center">この章では、if文とmatch文を使った条件分岐について紹介しています。</h2><br>
+
+        <h2>if文</h2>
+        <script src="https://gist.github.com/haruto17/2b1324b3c9d0f704f4ab59d54c837f00.js"></script>
+        <h4>これがRustのif文の基本的な書き方です。</h4>
+        <h4>条件式はかっこでくくる必要はありません。</h4>
+        <h4>また、最後のelse文は条件式を省略して書くこともできます。</h4>
+        <h4>注意点として、比較する対象はどちらも同じ型である必要があります。</h4>
+        <h4>例えば、以下のように異なる型同士を比較しようとするとエラーになります。</h4>
+        <script src="https://gist.github.com/haruto17/0d1a4c14ec4e57991170e3efd5823c82.js"></script>
+
+        <h3>発展</h3>
+        <h4>以下のようにすることで、条件式の返り値によって、変数の値を決定することができます。</h4>
+        <script src="https://gist.github.com/haruto17/7c67564d7f6b0871ca51569e9e990866.js"></script><br>
+
+        <h2>match文</h2>
+        <h4>match文はC++のswitch-case文に似ています。</h4>
+        <h4>パターンと一致するものがある場合は、指定された処理が実行されます。</h4>
+        <h4>もし、パターンに一致しなかった場合は、「=>」の後の処理が実行されます。</h4>
+        <script src="https://gist.github.com/haruto17/2ac6dc4eb4814c899855754a1313bc3b.js"></script><br>
+
+        <h2>課題</h2>
+        <h3>これまでの知識を使って電卓を作ってみよう</h3>
+        <h4>入力を受け取って、その計算結果を出力する電卓を作ってみましょう。</h4>
+        <h4>
+            入力例
+            <br>足し算をしたい場合、「1 + 1」と入力する。
+        </h4><br>
+        <h4>以下のコードの続きを書いてみましょう。</h4>
+        <script src="https://gist.github.com/haruto17/28af9d83796d895949f0d19fbd3b42bd.js"></script><br>
+
+        <h3>解答例1</h3>
+        <h4>演算子の入力に合わせて、if文を使い条件分岐を行った後、その答えを出力します。</h4>
+        <script src="https://gist.github.com/haruto17/d96dc1fa5b9d2416f5cda05aefd22756.js"></script><br>
+
+        <h3>解答例2</h3>
+        <h4>match文を使って条件分岐した場合</h4>
+        <script src="https://gist.github.com/haruto17/b4b33d89534f70710f46c930263609f2.js"></script><br>
+
     </body>
 </html>
