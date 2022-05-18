@@ -1,4 +1,8 @@
+@charset "UTF-8";
+
 .container{
+    display: flex;
+    flex-direction: column;
     width: auto;
     max-width: 400px;
     margin-right: auto;
@@ -11,5 +15,15 @@
     max-width: 200px;
     margin-right: auto;
     margin-left: auto;
+    background-color: rgb(247, 138, 15);
+}
+
+.footer{
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 400px;
+    text-align: center;
+    color: black;
     background-color: rgb(247, 138, 15);
 }
