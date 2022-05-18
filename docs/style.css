@@ -3,7 +3,7 @@
     max-width: 400px;
     margin-right: auto;
     margin-left: auto;
-    background-color: rgb(247, 167, 102);
+    /* background-color: rgb(247, 167, 102); */
 }
 
 .nav-container{
@@ -11,5 +11,5 @@
     max-width: 200px;
     margin-right: auto;
     margin-left: auto;
-    background-color: chartreuse;
+    background-color: rgb(247, 138, 15);
 }
