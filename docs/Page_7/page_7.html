@@ -6,9 +6,7 @@
         <link rel="stylesheet" href="../style.css">
         <title>Rust講習会2022 -入力-</title>
     </head>
-
     <body>
-
         <nav>
             <div class="nav-container">
                 <ol start="0">
@@ -54,30 +52,32 @@
                 </ol>
             </div>
         </nav>
-
-        <h1 align="center">Rust講習会2022</h1>
-        <h2 align="center">入力</h2>
-        <p>この章では、Rustの入力の受け取り方について紹介しています。</p><br>
-
-        <p>標準ライブラリを使う場合、やや複雑な書き方になります。以下は文字列の入力を受け取る場合のコードです。</p>
-        <script src="https://gist.github.com/haruto17/3a80a5665d0c9e07b168175199e03b18.js"></script>
-        <p>ターミナルやコンソールからの入力は文字列なので、それを格納するための可変変数を定義します。そして「std::io」の部分で入力をしています。
-            <br>これは文字列の入力でしたが、数値を入力したい場合はどうでしょう。
-        </p>
-        <script src="https://gist.github.com/haruto17/ada4eb3da49f9c57a90d26baf7649d52.js"></script>
-        <p>数値の入力でも、やはりターミナルやコンソールからの入力は文字列なので、入力を受け取った後文字列を数値に変換する作業が必要になります。</p><br>
-
-        <p>はい。C++に比べてかなり面倒です。
-            <br>なので、「proconio」という入力をサポートするライブラリを導入します。
-        </p>
-        <p>導入は簡単です。
-            <br>まず、target内にあるCargo.tomlを開きます。あとは[dependencies]に次のように追加するだけです。
-        </p>
-        <p><img src="page_7_0.png" alt="Ubuntu home"></p>
-        <script src="https://gist.github.com/haruto17/3982fe727c5f6cb2eae56f4a6806c595.js"></script>
-        <p>尚、型を明記しないとエラーとなるので注意しましょう。</p>
-        <script src="https://gist.github.com/haruto17/1de260f382e8554bc74543fbb4613af7.js"></script><br>
+        <div class="container">
+            <h1 align="center">Rust講習会2022</h1>
+            <h2 align="center">入力</h2>
+            <main>
+                <p>この章では、Rustの入力の受け取り方について紹介しています。</p><br>
         
+                <p>標準ライブラリを使う場合、やや複雑な書き方になります。以下は文字列の入力を受け取る場合のコードです。</p>
+                <script src="https://gist.github.com/haruto17/3a80a5665d0c9e07b168175199e03b18.js"></script>
+                <p>ターミナルやコンソールからの入力は文字列なので、それを格納するための可変変数を定義します。そして「std::io」の部分で入力をしています。
+                    <br>これは文字列の入力でしたが、数値を入力したい場合はどうでしょう。
+                </p>
+                <script src="https://gist.github.com/haruto17/ada4eb3da49f9c57a90d26baf7649d52.js"></script>
+                <p>数値の入力でも、やはりターミナルやコンソールからの入力は文字列なので、入力を受け取った後文字列を数値に変換する作業が必要になります。</p><br>
+        
+                <p>はい。C++に比べてかなり面倒です。
+                    <br>なので、「proconio」という入力をサポートするライブラリを導入します。
+                </p>
+                <p>導入は簡単です。
+                    <br>まず、target内にあるCargo.tomlを開きます。あとは[dependencies]に次のように追加するだけです。
+                </p>
+                <p><img src="page_7_0.png" alt="Ubuntu home"></p>
+                <script src="https://gist.github.com/haruto17/3982fe727c5f6cb2eae56f4a6806c595.js"></script>
+                <p>尚、型を明記しないとエラーとなるので注意しましょう。</p>
+                <script src="https://gist.github.com/haruto17/1de260f382e8554bc74543fbb4613af7.js"></script><br>        
+            </main>
+        </div>
         <footer>
             <div class="footer">
                 <p>© 2022 haruto17</p>

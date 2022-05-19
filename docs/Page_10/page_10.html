@@ -6,9 +6,7 @@
         <link rel="stylesheet" href="../style.css">
         <title>Rust講習会2022 -配列-</title>
     </head>
-
     <body>
-
         <nav>
             <div class="nav-container">
                 <ol start="0">
@@ -54,51 +52,54 @@
                 </ol>
             </div>
         </nav>
-
-        <h1 align="center">Rust講習会2022</h1>
-        <h2 align="center">配列</h2>
-        <p>この章では、配列を使い複数の値を保持する方法を紹介しています。</p>
-
-        <p>以下のように[要素の型; 要素数]という具合に指定し、配列を宣言します。</p>
-        <script src="https://gist.github.com/haruto17/34372188519518a8a85d63aba2c0c278.js"></script><br>
-
-        <p>配列要素へのアクセスは以下のようにして行うことができます。</p>
-        <script src="https://gist.github.com/haruto17/d3a77bda60083623ce8bf20fda57ceb6.js"></script><br>
-
-        <p>以下のようにすることで、特定の値で配列の要素を埋めることができます。</p>
-        <script src="https://gist.github.com/haruto17/0bb50cc2f28523166848c3d6745fd6d8.js"></script><br>
-
-        <h2>固定長配列と可変長配列</h2>
-        <h3>固定長配列</h3>
-        <p>ここまで紹介してきた配列は「固定長配列(静的配列)」と呼ばれるものです。一度初期化されると、その後はサイズを変更することはできません。
-            <br>つまり、値の追加や削除をすることはできません。
-            <br>固定長配列ではコンパイル時に配列のサイズが確定している必要があります。そのため、変数を使用して配列のサイズを定義することはできません。
-        </p><br>
-        <script src="https://gist.github.com/haruto17/cd8e97b68b4fdf02a5079ded5da72773.js"></script><br>
-
-        <h3>可変長配列</h3>
-        <p>固定長配列とは別に、「可変長配列(動的配列)」というものもあります。初期化後も、配列のサイズを変更することができます。
-            <br>つまり、値の追加や削除を行うことができます。
-            <br>可変長配列を定義するには、標準ライブラリのベクターを使い、以下のように宣言します。
-        </p>
-        <script src="https://gist.github.com/haruto17/ff3ad370542285d8e32cfe2f15b91574.js"></script><br>
-
-        <h2>おまけ 配列操作まとめ</h2><br>
-        <h3>ソート　.sort()</h3>
-        <script src="https://gist.github.com/haruto17/42ae630fc145b481e7f11366663c9676.js"></script><br>
-
-        <h3>重複要素をまとめる　.dedup()</h3>
-        <script src="https://gist.github.com/haruto17/7350bceba06d2d4c5a0d5bc2dfe48161.js"></script><br>
-
-        <h3>反転　.reverse()</h3>
-        <script src="https://gist.github.com/haruto17/7673363570322413a9c93de5fe63860e.js"></script><br>
-
-        <h3>要素の削除　.pop() .remove() .drain()</h3>
-        <script src="https://gist.github.com/haruto17/147dc5ff7a9f6e871caa05696f5a1012.js"></script><br>
-
-        <h3>配列の結合と分割　.append() .split_off()</h3>
-        <script src="https://gist.github.com/haruto17/31850d9860324aaf4fe2e9a9bbf2ad00.js"></script><br>
-
+        <div class="container">
+            <h1 align="center">Rust講習会2022</h1>
+            <h2 align="center">配列</h2>
+            <main>
+                <p>この章では、配列を使い複数の値を保持する方法を紹介しています。</p>
+        
+                <p>以下のように[要素の型; 要素数]という具合に指定し、配列を宣言します。</p>
+                <script src="https://gist.github.com/haruto17/34372188519518a8a85d63aba2c0c278.js"></script><br>
+        
+                <p>配列要素へのアクセスは以下のようにして行うことができます。</p>
+                <script src="https://gist.github.com/haruto17/d3a77bda60083623ce8bf20fda57ceb6.js"></script><br>
+        
+                <p>以下のようにすることで、特定の値で配列の要素を埋めることができます。</p>
+                <script src="https://gist.github.com/haruto17/0bb50cc2f28523166848c3d6745fd6d8.js"></script><br>
+        
+                <h2>固定長配列と可変長配列</h2>
+                <h3>固定長配列</h3>
+                <p>ここまで紹介してきた配列は「固定長配列(静的配列)」と呼ばれるものです。一度初期化されると、その後はサイズを変更することはできません。
+                    <br>つまり、値の追加や削除をすることはできません。
+                    <br>固定長配列ではコンパイル時に配列のサイズが確定している必要があります。そのため、変数を使用して配列のサイズを定義することはできません。
+                </p><br>
+                <script src="https://gist.github.com/haruto17/cd8e97b68b4fdf02a5079ded5da72773.js"></script><br>
+        
+                <h3>可変長配列</h3>
+                <p>固定長配列とは別に、「可変長配列(動的配列)」というものもあります。初期化後も、配列のサイズを変更することができます。
+                    <br>つまり、値の追加や削除を行うことができます。
+                    <br>可変長配列を定義するには、標準ライブラリのベクターを使い、以下のように宣言します。
+                </p>
+                <script src="https://gist.github.com/haruto17/ff3ad370542285d8e32cfe2f15b91574.js"></script><br>
+        
+                <h2>おまけ 配列操作まとめ</h2><br>
+                <h3>ソート　.sort()</h3>
+                <script src="https://gist.github.com/haruto17/42ae630fc145b481e7f11366663c9676.js"></script><br>
+        
+                <h3>重複要素をまとめる　.dedup()</h3>
+                <script src="https://gist.github.com/haruto17/7350bceba06d2d4c5a0d5bc2dfe48161.js"></script><br>
+        
+                <h3>反転　.reverse()</h3>
+                <script src="https://gist.github.com/haruto17/7673363570322413a9c93de5fe63860e.js"></script><br>
+        
+                <h3>要素の削除　.pop() .remove() .drain()</h3>
+                <script src="https://gist.github.com/haruto17/147dc5ff7a9f6e871caa05696f5a1012.js"></script><br>
+        
+                <h3>配列の結合と分割　.append() .split_off()</h3>
+                <script src="https://gist.github.com/haruto17/31850d9860324aaf4fe2e9a9bbf2ad00.js"></script><br>
+        
+            </main>
+        </div>
         <footer>
             <div class="footer">
                 <p>© 2022 haruto17</p>
