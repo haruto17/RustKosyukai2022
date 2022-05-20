@@ -23,6 +23,13 @@ body {
     background-color: rgb(247, 138, 15);
 }
 
+.box{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #fffdf9;
+    border-left: solid 10px #ffc06e;
+}
+
 .footer{
     margin-top: auto;
     margin-right: auto;

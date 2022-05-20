@@ -62,18 +62,18 @@
                 </p><br>
                 <h2>WSLのインストール</h2><br>
                 <h3>1.コマンドプロンプトを管理者モードで起動した後、以下のコマンドを実行する</h3>
-                <h4>wsl --install</h4><br>
+                <h4 class="box">wsl --install</h4><br>
                 <h3>2.Windowsを再起動する</h3><br>
                 <h3>3.再起動後、Ubuntuが起動しているはずなので、UNIXアカウントを作成する</h3>
                 <p><img src="page_2_0.png" alt="Ubuntu home"></p>
                 <p>必要なのはユーザー名とパスワードだけだよ</p><br>
                 <h3>4.以下のコマンドを実行する</h3>
-                <h4>sudo apt update</h4>
-                <h4>sudo apt dist-upgrade</h4>
-                <h4>sudo apt autoremove</h4><br>
+                <h4 class="box">sudo apt update</h4>
+                <h4 class="box">sudo apt dist-upgrade</h4>
+                <h4 class="box">sudo apt autoremove</h4><br>
                 <h3>5.以下のコマンドを実行し、build-essentialをインストールする</h3>
-                <h4>sudo apt-get update</h4>
-                <h4>sudo apt-get install build-essential</h4><br>
+                <h4 class="box">sudo apt-get update</h4>
+                <h4 class="box">sudo apt-get install build-essential</h4><br>
                 <h2>VScodeのインストール</h2><br>
                 <h3>1.以下のサイトからVScodeのインストーラーを入手する</h3>
                 <h4>https://code.visualstudio.com/download</h4>
@@ -82,28 +82,28 @@
                 <h3>3.Windowsを再起動する</h3><br>
                 <h2>Rustのインストール</h2><br>
                 <h3>1.Ubuntu上で以下のコマンドを実行する</h3>
-                <h4>curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</h4><br>
+                <h4 class="box">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</h4><br>
                 <h3>2.以下のようにしてインストール方法を聞かれるので、1を選択する</h3>
                 <h3>(カスタマイズしてインストールしたい場合は2を選択する)</h3>
                 <p><img src="page_2_1.png" alt="Select install option"></p><br>
                 <h3>3.以下のコマンドを実行する(パスを通す)</h3>
-                <h4>source $HOME/.cargo/env</h4><br>
+                <h4 class="box">source $HOME/.cargo/env</h4><br>
                 <h3>4.以下のコマンドでRustのバージョンを確認する</h3>
-                <h4>rustc --version</h4>
-                <h4>cargo --version</h4><br>
+                <h4 class="box">rustc --version</h4>
+                <h4 class="box">cargo --version</h4><br>
                 <h2>作業用ディレクトリの作成</h2><br>
                 <h3>1.以下のコマンドを実行して、作業用ディレクトリを作成する</h3>
-                <h4>mkdir $HOME/work</h4><br>
+                <h4 class="box">mkdir $HOME/work</h4><br>
                 <h3>2.以下のコマンドを実行して、作業用ディレクトリに移動する</h3>
-                <h4>cd &HOME/work</h4><br>
+                <h4 class="box">cd &HOME/work</h4><br>
                 <h3>3.以下のコマンドでRustプロジェクトを作成する</h3>
-                <h4>cargo new --bin rust_training</h4>
+                <h4 class="box">cargo new --bin rust_training</h4>
                 <p>プロジェクト名は適宜変更してください</p><br>
                 <h3>4.以下のコマンドで、作成したプロジェクトディレクトリに移動する</h3>
-                <h4>cd $HOME/work/rust_training</h4><br>
+                <h4 class="box">cd $HOME/work/rust_training</h4><br>
                 <h2>VScodeの設定</h2><br>
                 <h3>1.プロジェクトのディレクトリ直下にいる状態で、以下のコマンドを実行する</h3>
-                <h4>code .</h4>
+                <h4 class="box">code .</h4>
                 <p>VScodeが起動するはずです。
                     <br>起動した際、「Do you trust the authors of the files in this folder?」という警告が出るかもしれませんが、
                     <br>「Yes」を選択してください。
