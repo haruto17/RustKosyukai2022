@@ -21,6 +21,9 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color: rgb(247, 138, 15);
+    border-width: 5px;
+    border-style: double;
+    border-color: black;
 }
 
 .box{
