@@ -5,6 +5,10 @@ body {
     background-color: beige;
 }
 
+img {
+    object-fit: contain;
+}
+
 .container{
     display: flex;
     flex-direction: column;
