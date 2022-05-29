@@ -61,7 +61,9 @@
                 <p>算術演算子の使い方を覚えましょう。
                 算術演算子都は+(足す)、-(引く)、*(かける)、/(割る)、%(余り)のことです。</p>
                 <script src="https://gist.github.com/haruto17/a5d81f85682fad32bb9560a77abc390d.js"></script>
-                <p>C系言語とほとんど変わらないため、難しくはないと思います。
+                <p>C系言語とほとんど変わらないため、難しくはないと思います。尚、Rustには「A++」や「B--」のような
+                    インクリメント・デクリメント演算子はありません。その理由が<a href="https://prev.rust-lang.org/ja-JP/faq.html#why-doesnt-rust-have-increment-and-decrement-operators">こちらのページ</a>に書かれています。
+                    要するに、バグや未定義の動作になるかもしれないし、そもそも「x = x + 1」や「x += 1」で代用できるよね、ということらしいです。
                     _aと_bの値を変えて、いろいろな値を出力してみましょう。
                 </p><br>        
             </main>
