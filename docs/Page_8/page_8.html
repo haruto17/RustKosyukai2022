@@ -5,6 +5,15 @@
         <meta http-equiv="CONTENT-TYPE" content="text/html"; charset="UTF-8" />
         <link rel="stylesheet" href="../style.css">
         <title>Rust講習会2022 -条件分岐-</title>
+        <script>
+            const scroll_to_top_btn = document.querySelector("#scroll-to-top-button");
+
+            scroll_to_top_btn?.addEventListener("click", scroll_to_top);
+
+            function scroll_to_top() {
+	            window.scroll({ top: 0, behavior: "smooth" });
+            }
+        </script>
     </head>
     <body>
         <nav>
@@ -56,6 +65,7 @@
             <h1 align="center">Rust講習会2022</h1>
             <h2 align="center">条件分岐</h2>
             <main>
+                <button id="scroll-to-top-button" onclick="scroll_to_top()">>></button>
                 <p>この章では、if文とmatch文を使った条件分岐について紹介しています。</p><br>
                 <h2>if文</h2>
                 <script src="https://gist.github.com/haruto17/2b1324b3c9d0f704f4ab59d54c837f00.js"></script>

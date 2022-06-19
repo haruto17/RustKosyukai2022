@@ -5,6 +5,15 @@
         <meta http-equiv="CONTENT-TYPE" content="text/html"; charset="UTF-8" />
         <link rel="stylesheet" href="../style.css">
         <title>Rust講習会2022 -出力-</title>
+        <script>
+            const scroll_to_top_btn = document.querySelector("#scroll-to-top-button");
+
+            scroll_to_top_btn?.addEventListener("click", scroll_to_top);
+
+            function scroll_to_top() {
+	            window.scroll({ top: 0, behavior: "smooth" });
+            }
+        </script>
     </head>
     <body>
         <nav>
@@ -56,6 +65,7 @@
             <h1 align="center">Rust講習会2022</h1>
             <h2 align="center">出力</h2>
             <main>
+                <button id="scroll-to-top-button" onclick="scroll_to_top()">>></button>
                 <p>この章では、Rustのさまざまな出力方法について紹介しています</p><br>
                 <script src="https://gist.github.com/haruto17/505758aae5f561e9cc0a2b199084eb96.js"></script>
                 <p>これが標準的な出力方法だと思います。

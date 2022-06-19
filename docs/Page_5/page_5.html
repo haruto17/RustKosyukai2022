@@ -5,6 +5,15 @@
         <meta http-equiv="CONTENT-TYPE" content="text/html"; charset="UTF-8" />
         <link rel="stylesheet" href="../style.css">
         <title>Rust講習会2022 -変数と定数-</title>
+        <script>
+            const scroll_to_top_btn = document.querySelector("#scroll-to-top-button");
+
+            scroll_to_top_btn?.addEventListener("click", scroll_to_top);
+
+            function scroll_to_top() {
+	            window.scroll({ top: 0, behavior: "smooth" });
+            }
+        </script>
     </head>
     <body>
         <nav>
@@ -56,6 +65,7 @@
             <h1 align="center">Rust講習会2022</h1>
             <h2 align="center">変数と定数</h2>
             <main>
+                <button id="scroll-to-top-button" onclick="scroll_to_top()">>></button>
                 <p>この章では、Rustで変数と定数を宣言する方法を紹介しています。</p><br>
                 <h2>変数の宣言</h2>
                 <p>まず変数の宣言方法について紹介します。</p>

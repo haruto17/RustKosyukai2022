@@ -5,6 +5,15 @@
         <meta http-equiv="CONTENT-TYPE" content="text/html"; charset="UTF-8" />
         <link rel="stylesheet" href="../style.css">
         <title>Rust講習会2022 -リンク集-</title>
+        <script>
+            const scroll_to_top_btn = document.querySelector("#scroll-to-top-button");
+
+            scroll_to_top_btn?.addEventListener("click", scroll_to_top);
+
+            function scroll_to_top() {
+	            window.scroll({ top: 0, behavior: "smooth" });
+            }
+        </script>
     </head>
     <body>
         <nav>
@@ -56,6 +65,7 @@
             <h1 align="center">Rust講習会2022</h1>
             <h2 align="center">リンク集</h2>
             <main>
+                <button id="scroll-to-top-button" onclick="scroll_to_top()">>></button>
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </main>

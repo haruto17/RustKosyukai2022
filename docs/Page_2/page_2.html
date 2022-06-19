@@ -5,6 +5,15 @@
         <meta http-equiv="CONTENT-TYPE" content="text/html"; charset="UTF-8" />
         <link rel="stylesheet" href="../style.css">
         <title>Rust講習会2022 -環境構築-</title>
+        <script>
+            const scroll_to_top_btn = document.querySelector("#scroll-to-top-button");
+
+            scroll_to_top_btn?.addEventListener("click", scroll_to_top);
+
+            function scroll_to_top() {
+	            window.scroll({ top: 0, behavior: "smooth" });
+            }
+        </script>
     </head>
     <body>
         <nav>
@@ -56,6 +65,7 @@
             <h1 align="center">Rust講習会2022</h1>
             <h2 align="center">環境構築</h2>
             <main>
+                <button id="scroll-to-top-button" onclick="scroll_to_top()">>></button>
                 <p>
                     この章では、Rustの学習に必要な環境構築について紹介しています。
                     <br>ここでは、Windowsの使用を想定したインストール方法を解説しています。
