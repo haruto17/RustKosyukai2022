@@ -5,57 +5,71 @@
         <meta http-equiv="CONTENT-TYPE" content="text/html"; charset="UTF-8" />
         <link rel="stylesheet" href="../style.css">
         <title>Rust講習会2022 -算術演算子-</title>
+        <script>
+            const scroll_to_top_btn = document.querySelector("#scroll-to-top-button");
+
+            scroll_to_top_btn?.addEventListener("click", scroll_to_top);
+
+            function scroll_to_top() {
+	            window.scroll({ top: 0, behavior: "smooth" });
+            }
+        </script>
     </head>
     <body>
         <nav>
             <div class="nav-container">
-                <ol start="0">
-                    <li>
-                        <a href="../index.html" style="text-decoration: none;">TOP</a>
-                    </li>
-                    <li>
-                        <a href="../Page_1/page_1.html" style="text-decoration: none;" >はじめに</a>
-                    </li>
-                    <li>
-                        <a href="../Page_2/page_2.html" style="text-decoration: none;">環境構築</a>
-                    </li>
-                    <li>
-                        <a href="../Page_3/page_3.html" style="text-decoration: none;" >コンパイルと実行</a>
-                    </li>
-                    <li>
-                        <a href="../Page_4/page_4.html" style="text-decoration: none;" >出力</a>
-                    </li>
-                    <li>
-                        <a href="../Page_5/page_5.html" style="text-decoration: none;" >変数と定数</a>
-                    </li>
-                    <li>
-                        <a href="../Page_6/page_6.html" style="text-decoration: none;" >算術演算子</a>
-                    </li>
-                    <li>
-                        <a href="../Page_7/page_7.html" style="text-decoration: none;" >入力</a>
-                    </li>
-                    <li>
-                        <a href="../Page_8/page_8.html" style="text-decoration: none;" >条件分岐</a>
-                    </li>
-                    <li>
-                        <a href="../Page_9/page_9.html" style="text-decoration: none;" >繰り返し</a>
-                    </li>
-                    <li>
-                        <a href="../Page_10/page_10.html" style="text-decoration: none;" >配列</a>
-                    </li>
-                    <li>
-                        <a href="../Page_11/page_11.html" style="text-decoration: none;" >関数</a>
-                    </li>
-                    <li>
-                        <a href="../Page_12/page_12.html" style="text-decoration: none;" >リンク集</a>
-                    </li>
-                </ol>
+                <div class="nav-button">
+                    <div class="nav">
+                        <ol start="0" class="nav-list">
+                            <li>
+                                <a href="../index.html" style="text-decoration: none;">TOP</a>
+                            </li>
+                            <li>
+                                <a href="../Page_1/page_1.html">はじめに</a>
+                            </li>
+                            <li>
+                                <a href="../Page_2/page_2.html">環境構築</a>
+                            </li>
+                            <li>
+                                <a href="../Page_3/page_3.html">コンパイルと実行</a>
+                            </li>
+                            <li>
+                                <a href="../Page_4/page_4.html">出力</a>
+                            </li>
+                            <li>
+                                <a href="../Page_5/page_5.html">変数と定数</a>
+                            </li>
+                            <li>
+                                <a href="../Page_6/page_6.html">算術演算子</a>
+                            </li>
+                            <li>
+                                <a href="../Page_7/page_7.html">入力</a>
+                            </li>
+                            <li>
+                                <a href="../Page_8/page_8.html">条件分岐</a>
+                            </li>
+                            <li>
+                                <a href="../Page_9/page_9.html">繰り返し</a>
+                            </li>
+                            <li>
+                                <a href="../Page_10/page_10.html">配列</a>
+                            </li>
+                            <li>
+                                <a href="../Page_11/page_11.html">関数</a>
+                            </li>
+                            <li>
+                                <a href="../Page_12/page_12.html">リンク集</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="container">
             <h1 align="center">Rust講習会2022</h1>
             <h2 align="center">算術演算子</h2>
             <main>
+                <button id="scroll-to-top-button" onclick="scroll_to_top()">≫</button>
                 <p>この章では、Rustの算術演算子の使い方を紹介しています。</p><br>
         
                 <p>算術演算子の使い方を覚えましょう。
@@ -65,7 +79,9 @@
                     インクリメント・デクリメント演算子はありません。その理由が<a href="https://prev.rust-lang.org/ja-JP/faq.html#why-doesnt-rust-have-increment-and-decrement-operators">こちらのページ</a>に書かれています。
                     要するに、バグや未定義の動作になるかもしれないし、そもそも「x = x + 1」や「x += 1」で代用できるよね、ということらしいです。
                     _aと_bの値を変えて、いろいろな値を出力してみましょう。
-                </p><br>        
+                </p><br>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </main>
         </div>
         <footer>
