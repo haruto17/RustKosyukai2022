@@ -27,15 +27,60 @@ a {
     margin-left: auto;
 }
 
+.nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
 .nav-container{
-    width: auto;
-    max-width: 200px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgb(247, 138, 15);
-    border-width: 5px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30;
+    z-index: 30;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+.nav-list {
+    position: relative;
+    top: 60px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     border-style: double;
+    border-width: 5px;
     border-color: black;
+}
+
+.nav-list li{
+    display: block;
+    background-color: rgb(247, 138, 15);
+    padding: 15px 20px;
+    border-bottom: 1px;
+    text-align: center;
+}
+
+.nav-list a{
+    display: block;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+.nav-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    width: 60px;
+    height: 60px;
 }
 
 .box{
