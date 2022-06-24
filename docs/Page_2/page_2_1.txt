@@ -1,3 +1,0 @@
-VScodeが起動するはずです。
-起動した際、「Do you trust the authors of the files in this folder?」という警告が出るかもしれませんが、
-「Yes」を選択で大丈夫です。
